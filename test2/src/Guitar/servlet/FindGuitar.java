@@ -1,6 +1,7 @@
 package Guitar.servlet;
 
 import java.io.IOException;
+
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -9,13 +10,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Guitar.dao.ID;
-import Guitar.dao.impl.Inventory;
+import Guitar.dao.impl.GuitarSpec;
 import Guitar.entity.Builder;
 import Guitar.entity.Guitar;
 import Guitar.entity.Type;
 import Guitar.entity.Wood;
 
-public class FindGuitar extends HttpServlet{
+public class findguitar extends HttpServlet{
 	
 	 private static final long serialVersionUID = 1L ; 
 	 public void doGet(HttpServletRequest request,HttpServletResponse response)throws 
@@ -33,9 +34,9 @@ public class FindGuitar extends HttpServlet{
 		String backwood =request.getParameter("backwood");
 		String topwood =request.getParameter("topwood");
 		
-		ID inventory = new Inventory();
-		Guitar whatErinLikes = new Guitar("", price, Builder.valueOf(builder), model, 
-                Type.valueOf(null, type), Wood.valueOf(backwood), Wood.valueOf(topwood));
+		Inventory inventory = new Inventory();
+		GuitarSpec whatErinLikes = new GuitarSpec(null, null, null, 0, null, null);
+		
 		List matchingGuitars = inventory.search(whatErinLikes);
 		
 		if (!matchingGuitars.isEmpty()) {

@@ -18,12 +18,12 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>FindGuitar</servlet-name>
-		<servlet-class>Guitar.servlet.FindGuitar</servlet-class>
+		<servlet-name>findguitar</servlet-name>
+		<servlet-class>Guitar.servlet.findguitar</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>FindGuitar</servlet-name>
-		<url-pattern>/FindGuitar</url-pattern>
+		<servlet-name>findguitar</servlet-name>
+		<url-pattern>/findguitar</url-pattern>
 	</servlet-mapping>
 	
 	</web-app>
