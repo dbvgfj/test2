@@ -7,4 +7,4 @@
 数据库截图：</br>
 ![image](https://github.com/dbvgfj/test2/blob/master/1/1.png)
 测试截图：</br>
-![image]（https://github.com/dbvgfj/test2/blob/master/1/test.png）
+![image](https://github.com/dbvgfj/test2/blob/master/1/test.png)
